@@ -1,0 +1,26 @@
+{
+  "name": "carepatron-mock",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A mock of Carepatron: the app your migration tool moves a practice into.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "demo": "tsx src/server.ts --demo",
+    "dev": "tsx watch src/server.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "hono": "^4.13.16",
+    "tsx": "^4.23.15",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
+  }
+}
